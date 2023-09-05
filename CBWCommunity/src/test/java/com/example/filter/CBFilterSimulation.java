@@ -2,6 +2,15 @@ package com.example.filter;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import org.bytedeco.ffmpeg.global.avcodec;
+import org.bytedeco.ffmpeg.global.avutil;
+import org.bytedeco.javacv.FFmpegFrameGrabber;
+import org.bytedeco.javacv.FFmpegFrameRecorder;
+import org.bytedeco.javacv.Frame;
+import org.bytedeco.javacv.Java2DFrameConverter;
 
 public class CBFilterSimulation {
 
@@ -125,5 +134,5 @@ public class CBFilterSimulation {
     public enum ColorBlindType {
         PROTANOPIA,   // Protanopia: 빨간색에 영향을 받는 색상을 구분하지 못함
         DEUTERANOPIA  // Deuteranopia: 녹색에 영향을 받는 색상을 구분하지 못함
-    }
+    }   
 }

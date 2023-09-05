@@ -10,8 +10,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class CbFilterMain {
-    
+import org.bytedeco.javacv.FFmpegFrameGrabber;
+import org.bytedeco.javacv.Frame;
+
+
+public class CBFilterMain {
 	public static void main(String[] args) {
         JFileChooser fileChooser = new JFileChooser();
         int result = fileChooser.showOpenDialog(null);
@@ -30,7 +33,7 @@ public class CbFilterMain {
                 // 색맹 시뮬레이션 적용
                 BufferedImage simulatedImage = CBFilterSimulation.simulateColorBlindness(originalImage, type);
 
-                // 결과 이미지를 화면에 보여주기 위한 창 생성
+                // 결과 이미지를 화면에 보여주기 위한 Swing 창 생성
                 JFrame frame = new JFrame("Simulated Image");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
