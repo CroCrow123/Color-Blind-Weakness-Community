@@ -5,13 +5,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import org.bytedeco.ffmpeg.global.avcodec;
-import org.bytedeco.ffmpeg.global.avutil;
-import org.bytedeco.javacv.FFmpegFrameGrabber;
-import org.bytedeco.javacv.FFmpegFrameRecorder;
-import org.bytedeco.javacv.Frame;
-import org.bytedeco.javacv.Java2DFrameConverter;
-
 public class CBFilterSimulation {
 
     // Daltonize 알고리즘에 사용되는 매개변수
@@ -24,8 +17,8 @@ public class CBFilterSimulation {
     private static final double DEUTERANOPIA_ALPHA = 0.7;
 
     // Gamma 보정값
- 	private static final double GAMMA = 2.2;	
-    
+    private static final double GAMMA = 2.2;	
+
     // 색맹 시뮬레이션 메소드
     public static BufferedImage simulateColorBlindness(BufferedImage originalImage, ColorBlindType type) {
         int width = originalImage.getWidth();
@@ -44,16 +37,8 @@ public class CBFilterSimulation {
                 int rgb = originalImage.getRGB(x, y);
                 Color color = new Color(rgb);
 
-                // Gamma 보정 적용
-                color = applyGammaCorrection(color);
-                
                 // Daltonize 알고리즘 적용
                 Color simulatedColor = simulateColorBlindness(color, alpha);
-                simulatedImage.setRGB(x, y, simulatedColor.getRGB());
-                
-                // 역 Gamma 보정 적용
-                simulatedColor = applyInverseGammaCorrection(simulatedColor);
-
                 simulatedImage.setRGB(x, y, simulatedColor.getRGB());
             }
         }
@@ -61,22 +46,22 @@ public class CBFilterSimulation {
         return simulatedImage;
     }
 
-    //Gamma 보정 적용
+    // Gamma 보정 적용
     private static Color applyGammaCorrection(Color color) {
         int red = (int) (255 * Math.pow(color.getRed() / 255.0, 1.0 / GAMMA));
         int green = (int) (255 * Math.pow(color.getGreen() / 255.0, 1.0 / GAMMA));
         int blue = (int) (255 * Math.pow(color.getBlue() / 255.0, 1.0 / GAMMA));
         return new Color(red, green, blue);
     }
-    
-    //역 Gamma 보정 적용
+
+    // 역 Gamma 보정 적용
     private static Color applyInverseGammaCorrection(Color color) {
         int red = (int) (255 * Math.pow(color.getRed() / 255.0, GAMMA));
         int green = (int) (255 * Math.pow(color.getGreen() / 255.0, GAMMA));
         int blue = (int) (255 * Math.pow(color.getBlue() / 255.0, GAMMA));
         return new Color(red, green, blue);
     }
-    
+
     // Daltonize 알고리즘
     private static Color simulateColorBlindness(Color color, double alpha) {
         double[] lms = colorToLMS(color);
@@ -134,5 +119,5 @@ public class CBFilterSimulation {
     public enum ColorBlindType {
         PROTANOPIA,   // Protanopia: 빨간색에 영향을 받는 색상을 구분하지 못함
         DEUTERANOPIA  // Deuteranopia: 녹색에 영향을 받는 색상을 구분하지 못함
-    }   
+    }
 }
