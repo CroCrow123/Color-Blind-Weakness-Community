@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Blindness Simulation Result</title>
+</head>
+<body>
+    <h1>Color Blindness Simulation Result</h1>
+    
+    <h2>Original Image:</h2>
+    <img th:src="${file.getOriginalFilename()}" alt="Original Image">
+    
+    <h2>Simulated Image:</h2>
+    <img th:src="${convertedImage}" alt="Simulated Image">
+</body>
+</html>
