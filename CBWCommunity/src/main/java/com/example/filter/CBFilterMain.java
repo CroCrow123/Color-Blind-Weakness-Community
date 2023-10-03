@@ -1,4 +1,4 @@
-package com.example.filter;
+/*package com.example.filter;
 
 import com.example.filter.CBFilterSimulation.ColorBlindType;
 
@@ -107,4 +107,4 @@ public class CBFilterMain {
     }
 
     
-}
+}*/
