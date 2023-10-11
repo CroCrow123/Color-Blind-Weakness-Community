@@ -66,5 +66,19 @@ function loadFile(input) {
     var container = document.getElementById('image-show');
     container.appendChild(newImage);
 };
+function filechk(){
 
+    var fileDir="확장자를 포함한 파일명";
+
+    
+
+    if(fileDir.substring(fileDir.lastIndexOf(".")+1,fileDir.length).search("확장자명") == -1){
+
+    alert("지정된 확장자의 파일만 업로드 가능합니다!");
+    
+    }
+
+    
+
+}
 
