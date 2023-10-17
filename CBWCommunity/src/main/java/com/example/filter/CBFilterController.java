@@ -1,4 +1,4 @@
-package com.example.filter;
+/*package com.example.filter;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -66,3 +66,4 @@ public class CBFilterController {
         return "result";
     }
 }
+*/
