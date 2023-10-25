@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\YUHAN\Desktop\201707079 임준혁 (1)"/>
+			<item value="C:\Users\YUHAN\Desktop\springTest (1)\ch4_IPA2"/>
+			<item value="C:\Users\YUHAN\Desktop\springTest (1)"/>
+			<item value="C:\Users\YUHAN\Desktop\201707079 임준혁"/>
+			<item value="C:\Users\YUHAN\Desktop\졸작 합치기\인터페이스\page"/>
+			<item value="C:\Users\YUHAN\Desktop\졸작 합치기\메인\CBWCommunity"/>
+		</list>
+	</section>
+</section>

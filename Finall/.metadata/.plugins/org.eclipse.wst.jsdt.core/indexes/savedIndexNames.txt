@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\Users\YUHAN\Desktop\졸작 합치기\Finall\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3182227965.index

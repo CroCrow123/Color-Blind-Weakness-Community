@@ -1,0 +1,14 @@
+package com.example.filter;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@SpringBootApplication
+public class Controller {
+
+	@PostMapping("/index")
+	public class homeMethod()
+	{
+		
+	}
+}

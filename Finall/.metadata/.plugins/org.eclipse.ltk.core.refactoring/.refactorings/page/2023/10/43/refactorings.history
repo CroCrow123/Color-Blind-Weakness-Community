@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 7 elements to &apos;templates&apos;&#x0D;&#x0A;- Original project: &apos;page&apos;&#x0D;&#x0A;- Destination element: &apos;templates&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     index.html&#x0D;&#x0A;     post.html&#x0D;&#x0A;     contact.html&#x0D;&#x0A;     about.html&#x0D;&#x0A;     assets&#x0D;&#x0A;     css&#x0D;&#x0A;     js&#x0D;&#x0A;- Update references to refactored element" description="Move elements" element1="index.html" element2="post.html" element3="contact.html" element4="about.html" element5="assets" element6="css" element7="js" files="4" flags="589830" folders="3" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1698200979282" target="/CBWWebSite/src/main/resources/templates" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+package com.example.filter;
+
+import org.springframework.web.bind.annotation.PostMapping;
+
+
+
+@org.springframework.stereotype.Controller
+public class Controller {
+
+	
+	@PostMapping("/index")
+	public class homeMethod()
+	{
+		return
+	}
+}
