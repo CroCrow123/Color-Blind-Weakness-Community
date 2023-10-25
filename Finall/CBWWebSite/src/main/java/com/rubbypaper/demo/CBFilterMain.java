@@ -5,6 +5,10 @@ import com.madgag.gif.fmsware.GifDecoder;
 import com.rubbypaper.demo.CBFilterSimulation.ColorBlindType;
 
 import javax.imageio.ImageIO;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,15 +17,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+@Controller
 public class CBFilterMain {
+	@PostMapping("/filter")
     public static void main(String[] args) {
-        // 콘솔에서 이미지 파일 경로와 색맹 유형을 입력받습니다.
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("이미지 파일 경로를 입력하세요");
-        String imagePath = scanner.nextLine();
-        System.out.println("색맹 유형을 선택하세요");
-        int colorBlindTypeIndex = scanner.nextInt();
-        scanner.close();
+      
+		String str = "";
+		int type = 0;
+		
+        String imagePath = str;        
+        int colorBlindTypeIndex = type; 
+        
 
         // 입력된 색맹 유형에 해당하는 열거형 상수를 얻습니다.
         ColorBlindType colorBlindType = getColorBlindTypeByIndex(colorBlindTypeIndex);
