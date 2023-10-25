@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
+         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -62,15 +61,17 @@
                     <div class="fileuploadcontainer">
                         <div class="image-upload" id="image-upload">
                 
-                            <form method="get" enctype="multipart/form-data">
-                                <button class="button">
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="button">
                                     <label for="chooseFile">
                                         파일선택
                                     </label>
-                                </button>
-                      <input type="file" accept=".png,.jpg,.gif" id="chooseFile" name="chooseFile" onchange="loadFile(this)">
+                                </div>
+
+
+                                <input type="file" accept="image/*.png,.jpg,.gif" id="chooseFile" name="chooseFile" onchange="loadFile(this)">
                                 <!--이미지 선택하는 기능으로 accept=".png,.jpg,.gif"부분이 .png,.jpg,.gif들 확장자만 파일 선택가능하게 해줍니다.-->
-                           
+                            </form>
                 
                             <div class="fileContainer">
                                 <div class="fileInput"> <!--파일 이름 보여주는 태그입니다.-->
@@ -85,8 +86,7 @@
                                 </select>
                                 <div class="buttonContainer"> <!--업로드한 사진 보이게하는 버튼입니다.-->
                                     <div class="submitButton" id="submitButton">SUBMIT</div>
-                                </div> 
-                               </form>
+                                </div>
                             </div>
                         </div>
                         
