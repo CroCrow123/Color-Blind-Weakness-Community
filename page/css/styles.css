@@ -10820,17 +10820,21 @@ select:focus{
 }
 
 .button {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    display: grid;
 }
 
 label {
-  cursor: pointer;
-  font-size: 1em;
+    cursor: pointer;
+    font-size: 1em;
+    height: auto;
+    width: 100%;
+    border:1px solid ;
 }
 
 #chooseFile {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .fileContainer {
