@@ -51,7 +51,7 @@ public class CBFilterMain {
                 }
 
                 // 새로운 GIF 이미지 생성
-                String outputImagePath = "src/main/resources/Images/Converted_" + imageFile.getName();
+                String outputImagePath = "src/main/resources/webapp/resouces/img/convert" + imageFile.getName();
                 createGifFromFrames(frames, outputImagePath);
 
                 System.out.println("GIF 이미지 변환이 완료되었습니다.");
@@ -63,7 +63,7 @@ public class CBFilterMain {
                 BufferedImage simulatedImage = CBFilterSimulation.simulateColorBlindness(originalImage, colorBlindType);
 
                 // 이미지 저장
-                String outputImagePath = "src/main/resources/Images/Converted_" + imageFile.getName();
+                String outputImagePath = "src/main/resources/webapp/resouces/img/convert" + imageFile.getName();
                 ImageIO.write(simulatedImage, "png", new File(outputImagePath));
 
                 System.out.println("이미지 변환이 완료되었습니다.");
@@ -71,6 +71,8 @@ public class CBFilterMain {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
+        
     }
 
     // 숫자로 입력된 색맹 유형을 열거형 상수로 변환
@@ -102,4 +104,8 @@ public class CBFilterMain {
 
         encoder.finish();
     }
+    
+
+  
+	
 }
