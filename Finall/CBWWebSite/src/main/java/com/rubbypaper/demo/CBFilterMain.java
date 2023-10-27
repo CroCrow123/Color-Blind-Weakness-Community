@@ -19,14 +19,22 @@ import java.util.Scanner;
 
 @Controller
 public class CBFilterMain {
+	
+    static String imagePath ;        
+    static int colorBlindTypeIndex ; 
+    
 	@PostMapping("/filter")
-    public static void main(String[] args) {
-      
+	public String Methodnum()
+	{
 		String str = "";
 		int type = 0;
 		
-        String imagePath = str;        
-        int colorBlindTypeIndex = type; 
+		imagePath = str;        
+       colorBlindTypeIndex = type; 
+		return imagePath + "";
+	}
+    public static void main(String[] args) {      
+	
         
 
         // 입력된 색맹 유형에 해당하는 열거형 상수를 얻습니다.
