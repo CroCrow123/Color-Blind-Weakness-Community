@@ -6,3 +6,26 @@
 
 2. 이미지 출력 관련 코드 
 : https://itjy2.tistory.com/109
+
+3. javascript hide 관련 명령어
+- https://yian.tistory.com/26
+- https://wecanit.tistory.com/18
+- https://hianna.tistory.com/700
+- https://sacstory.tistory.com/entry/%ED%83%9C%EA%B7%B8%EC%97%90-hidden%EA%B0%92-%EC%A3%BC%EA%B8%B0
+
+4. 파일 관련 javascript 명령어
+- https://hianna.tistory.com/345
+- https://hianna.tistory.com/346
+
+
+
+
+웹 페이지에서 파일 업로드 한 것을 필터 알고리즘을 통해 변환 후 변환 한 이미지를 페이지에 보여주게 하기
+
+1. 파일 경로와 색맹 타입 값을 알고리즘 쪽으로 넘겨주기
+2. 변환이 성공적으로 됐으면 이 이미지가 경로 설정한 쪽으로 저장됨
+3. 저장된 이미지를 index.html로 불러오기
+
+
+
+
